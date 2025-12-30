@@ -27,27 +27,21 @@
 // export default UseState;
 
 
-import React, {useState} from "react";
+////////////////////////////////////////////////////////////////////////////////////////////
 
-function UseState(){
-  const [num, updatedNum] = useState(0)
 
-  function inc(){
-    updatedNum(num+1)
-  }
+// import { useState } from "react";
 
-  function dec(){
-    updatedNum(num-1)
-  }
+// function UseState(){
+//   const [text, updatedText] = useState("")
 
-  return(
-    <div>
-      <h1>Number: </h1>
-      <h3>{num}</h3>
-      <button onClick={inc}>+</button>
-      <button onClick={dec}>-</button>
-    </div>
-  );
-}
+//   return(
+//     <>
+//     <input type="text" value={text} onChange={(e)=>updatedText(e.target.value)}/>
 
-export default UseState;
+//     <h2>Name: {text}</h2>
+//     </>
+//   );
+// }
+
+// export default UseState;
