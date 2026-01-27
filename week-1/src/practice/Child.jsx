@@ -29,3 +29,30 @@
 
 
 
+// import React from 'react'
+
+// const Child = ({props}) => {
+//   return (
+//     <div>
+//       <button onClick={()=>props("Hii")}>Ok</button>
+//     </div>
+//   )
+// }
+
+// export default Child 
+
+
+import React, { useContext } from 'react'
+import {userContext} from './Test'
+
+const Child = () => {
+  const {data, setData} = useContext(userContext)
+  return (
+    <div>
+      <h1>{data}</h1>
+      <button onClick={()=>setData("Hiii")}>Ok</button>
+    </div>
+  )
+}
+
+export default Child

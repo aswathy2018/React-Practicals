@@ -1,32 +1,34 @@
-// import { useState } from "react";
-// import Child from "./practice/Child"
+// import React, { useState } from 'react'
+// import Demo from './practice/Demo'
+// import Child from './practice/Child'
 
-// function App(){
-//     const [data, setData] = useState("")
+// const App = () => {
+//   let [data, setData] = useState('')
 
-//     function setting(data){
-//         setData(data)
-//     }
-
-//     return(
-//         <div>
-//             <h1>Parent: </h1>
-//             <h3>{data}</h3>
-//             <h4><Child props={setting}/></h4>
-//         </div>
-//     );
+//   let handleData = (data)=>{
+//     setData(data)
+//   }
+//   return(
+//     <div>
+//       <h2>Message: {data}</h2>
+//       <Child props = {handleData}/>
+//     </div>
+//   )
 // }
 
-// export default App;
+// export default App
 
+import React from 'react'
+import Test from './practice/Test'
+import Child from './practice/Child'
 
-
-import Timer from "./practice/Timer"
-
-
-function App() {
+const App = () => {
   return (
-    <Timer/>
+    <div>
+      <Test>
+        <Child/>
+      </Test>
+    </div>
   )
 }
 
