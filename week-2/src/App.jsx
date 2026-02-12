@@ -62,15 +62,26 @@
 
 // export default App
 
+// import React from 'react'
+// import Parent from './Practice/Parent'
+// import Child from './Practice/Child'
+
+// const App = () => {
+//   return (
+//     <Parent>
+//       <Child/>
+//     </Parent>
+//   )
+// }
+
+// export default App
+
+
 import React from 'react'
-import Parent from './Practice/Parent'
-import Child from './Practice/Child'
 
 const App = () => {
   return (
-    <Parent>
-      <Child/>
-    </Parent>
+    <div>App</div>
   )
 }
 
